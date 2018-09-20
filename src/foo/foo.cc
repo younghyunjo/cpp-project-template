@@ -1,6 +1,5 @@
 #include <iostream>
 
-#if 0
 #include "cjson/cJSON.h"
 #include "curl/curl.h"
 
@@ -14,7 +13,6 @@ void curl_test() {
     std::cout << "Curl version:";
     std::cout << curl_version() << std::endl;
 }
-#endif
 
 int foo(bool a) {
     if (a)

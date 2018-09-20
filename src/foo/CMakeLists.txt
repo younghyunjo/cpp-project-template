@@ -1,5 +1,5 @@
 find_package(cJSON REQUIRED)
-find_package(curl REQUIRED)
+find_package(CURL REQUIRED)
 
 add_library(foo foo.cc)
 include_directories(foo)
