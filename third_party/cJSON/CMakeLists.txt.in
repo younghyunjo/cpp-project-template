@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.12)
+project(cJSON-download NONE)
+
+include(ExternalProject)
+ExternalProject_Add(cJSON
+  GIT_REPOSITORY    https://github.com/DaveGamble/cJSON.git
+  GIT_TAG           master
+  PREFIX            "${CMAKE_CURRENT_BINARY_DIR}"
+  CMAKE_ARGS        "-DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/install"
+  TEST_COMMAND      ""
+)
+
+
+
