@@ -1,0 +1,3 @@
+file(GLOB_RECURSE HEADERS *.h)
+
+install(FILES ${HEADERS} DESTINATION include)

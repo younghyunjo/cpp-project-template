@@ -1,7 +1,7 @@
 find_package(cJSON REQUIRED)
 find_package(CURL REQUIRED)
 
-add_library(foo foo.cc)
+add_library(foo SHARED foo.cc)
 include_directories(foo)
 target_link_libraries(foo ${CJSON_LIBRARIES} CURL::libcurl)
 target_include_directories(foo

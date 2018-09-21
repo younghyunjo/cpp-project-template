@@ -3,8 +3,9 @@
 #include "cjson/cJSON.h"
 #include "curl/curl.h"
 
+#include "foo.h"
 
-int cjson_test() {
+void cjson_test() {
     std::cout << "Curl version:";
     std::cout << cJSON_Version() <<std::endl;
 }
@@ -14,9 +15,9 @@ void curl_test() {
     std::cout << curl_version() << std::endl;
 }
 
-int foo(bool a) {
-    if (a)
-        return 1;
-    else
-        return 0;
+int foo(int a) {
+    cjson_test();
+    curl_test();
+
+    return a;
 }
