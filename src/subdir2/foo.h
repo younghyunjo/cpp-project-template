@@ -4,4 +4,3 @@
 extern int foo(int a);
 
 #endif //#ifndef _FOO_H_
-

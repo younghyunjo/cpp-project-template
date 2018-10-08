@@ -1,2 +1,3 @@
-add_library(bar bar.cc)
-target_link_libraries(bar foo)
+add_library(bar OBJECT bar.cc)
+set_target_properties(bar PROPERTIES POSITION_INDEPENDENT_CODE True)
+target_link_libraries(bar PUBLIC foo)

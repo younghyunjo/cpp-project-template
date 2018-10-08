@@ -3,7 +3,9 @@
 
 #include "main_entry.h"
 
-void main_entry() {
-    bar();
+int main_entry(int arg) {
+    bar(0);
     foo(0);
+
+    return arg;
 }

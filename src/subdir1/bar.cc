@@ -1,7 +1,8 @@
-#include <subdir2/foo.h>
+#include <foo.h>
 
 #include "bar.h"
 
-void bar() {
+int bar(int arg) {
     foo(0);
+    return arg;
 }
